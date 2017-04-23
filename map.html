@@ -24,10 +24,12 @@
 <body>
 
 <h1> Map page </h1>
-<button type="submit" id=nav>Report Crime</button>
-
-<form id="folTrip">
-    <button type="submit">Quest Trip Follow</button>
+<form id="sendpicture">
+<label> Report Crime: Upload an image</label>
+<input type="file" accept= "image/*" camera="camera"></input>
+</form>
+<form id="folTrip" action="recieved.html">
+    <button onclick="sendText()">Quest Trip Follow</button>
 </form>
 <button onclick="location.href = 'https://maps.google.com?saddr=29.7217625,-95.3628008&daddr=29.719729,-95.3534427GB&key=AIzaSyD4R_jJUZkKS47dCe_vvVHmVl9bbSe-1nk';" id=nav>Nearest Station</button>
 <div id="out"></div>
