@@ -89,5 +89,5 @@ prompt(window,
 
 function Navivation() {
     geoFindMe()
-    var nav = url('https://maps.google.com/?saddr=latitude,longitude&addr=29.766083,-95.358810')
+    window.location.href = 'https://maps.google.com/?saddr=29.7218,95.3606&addr=29.766083,-95.358810';
 }
