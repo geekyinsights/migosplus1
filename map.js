@@ -11,7 +11,7 @@ function geoFindMe() {
     var longitude = position.coords.longitude;
 
     //output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
-
+    window.location.href = 'https://maps.google.com/?saddr=latitude,longitude&addr=29.766083,-95.358810';
   }
 
   function error() {
@@ -85,9 +85,3 @@ prompt(window,
        "extensions.foo-addon.allowGeolocation",
        "Foo Add-on wants to know your location.",
        function callback(allowed) { alert(allowed); });
-
-
-function Navivation() {
-    geoFindMe()
-    window.location.href = 'https://maps.google.com/?saddr=29.7218,95.3606&addr=29.766083,-95.358810';
-}
