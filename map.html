@@ -4,7 +4,7 @@
 
     <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+    <script src="text.js"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -24,7 +24,11 @@
 <body>
 
 <h1> Map page </h1>
+<button type="submit" id=nav>Report Crime</button>
 
+<form id="folTrip">
+<button type="submit" >Quest Trip Follow</button>
+</form>
 <button onclick="location.href = 'https://maps.google.com?saddr=29.7217625,-95.3628008&daddr=29.719729,-95.3534427GB&key=AIzaSyD4R_jJUZkKS47dCe_vvVHmVl9bbSe-1nk';" id=nav>Nearest Station</button>
 <div id="out"></div>
 
