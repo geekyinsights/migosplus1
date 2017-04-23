@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<script src="text.js"></script>
+<!---<script src="text.js"></script>--->
 <script>
 function sentTextMessage(){
     var accountSid ='AC4851e7938c2970194bcc3821db6ff655';
@@ -22,7 +22,7 @@ function sentTextMessage(){
         from: "+16198701485",
         body: "Mary Smith 555444333 is route to Station ",
     }, function(err,message){
-        if(err){
+        if(err){<!---
             console.log(err);
         }else{
          console.log(message.sid);
