@@ -4,7 +4,7 @@
 
     <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="text.js"></script>
+    <script src="map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -23,10 +23,12 @@
     </style>
 </head>
 <body>
-<script src ="text.js"></script>
+<script src ="map.js"></script>
 <h1> Map page </h1>
 
-<button>Nearest Station</button>
+<button onclick="geoFindMe">Nearest Station</button>
+<div id="out"></div>
+<!---
     <div id="map-canvas"></div>
     <script>
       function initMap() {
@@ -56,15 +58,12 @@
             label: "B",
             map: map
           });
-          map.setCenter(pointA);
+    //      map.setCenter(pointA);
         // get route from A to B
-        calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB);
+    //    calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB);
 
-      }
-
-
-
-      function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB) {
+    //}
+     /* function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB) {
         directionsService.route({
           origin: pointA,
           destination: pointB,
@@ -76,10 +75,10 @@
             window.alert('Directions request failed due to ' + status);
           }
         });
-      }
+    }*/
 
       initMap();
-
+  -->
 
 
 
