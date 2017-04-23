@@ -9,7 +9,7 @@
 <body>
 <!---<script src="text.js"></script>--->
 <script>
-function sentTextMessage(){
+var sentTextMessage= function(){
     var accountSid ='AC4851e7938c2970194bcc3821db6ff655';
     var authToken ='64d897277252702e1671cce391870663';
 
@@ -22,14 +22,17 @@ function sentTextMessage(){
         from: "+16198701485",
         body: "Mary Smith 555444333 is route to Station ",
     }, function(err,message){
-        if(err){<!---
+        if(err){
             console.log(err);
         }else{
          console.log(message.sid);
          }
     });
-
 }
+$(window).load(function(){
+    $("#sendText").submit(sendTextMessage);
+
+});
 
 </script>
 <h1> Map page </h1>
@@ -37,9 +40,9 @@ function sentTextMessage(){
 <label> Report Crime: Upload an image</label>
 <input type="file" accept= "image/*" camera="camera"></input>
 </form>
-
-<button onclick="sendTextMessage()"> Quest Trip Follow </button>
-
+<form id="sendText">
+<button type="submit"> Quest Trip Follow </button>
+</form>
 
 
 <button onclick="location.href = 'https://maps.google.com?saddr=29.7217625,-95.3628008&daddr=29.719729,-95.3534427GB&key=AIzaSyD4R_jJUZkKS47dCe_vvVHmVl9bbSe-1nk';" id=nav>Nearest Station</button>
