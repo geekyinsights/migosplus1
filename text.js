@@ -1,10 +1,39 @@
-$(window).load(function () {
+function sendTextMessage(){
+
+    var accountSid ='AC4851e7938c2970194bcc3821db6ff655';
+    var authToken ='64d897277252702e1671cce391870663';
+
+
+    var client = require('twilio')(accountSid,authToken);
+
+
+    client.messages.create({
+
+        to: "+17133576031",
+        from: "+16018963851",
+        body: "Mary Smith 555444333 is route to Station ",
+    }, function(err,message){
+
+         console.error(message.sid);
+    });
+}
+
+
+
+
+
+
+
+
+
+/*$(window).load(function () {
 
   // Find the HTML element with the id recommendationForm, and when the submit
   // event is triggered on that element, call submitRecommendation.
   $("#folTrip").submit(followTrip);
 
 });
+*/
 /*
 // Download the twilio-csharp library from twilio.com/docs/libraries/csharp
 using System;
